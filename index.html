@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div >
+    <video id="vid" src="video/videoplayback.mp4" autoplay controls="controls" loop muted>
+   </video>
+ </div>
+    <div>
+    <audio id="aud" src="audio/SleepAway.mp3" autoplay controls="controls" loop>
+
+  </audio>
+  </div>
+  <button type="button" name="pause" onClick="vpause()">video pause</button>
+  <button type="button" name="play" onClick="vplay()">video play</button>
+  <br>
+  <br>
+  <button type="button" name="pause" onClick="apause()">audio pause</button>
+  <button type="button" name="play" onClick="aplay()">audio play</button>
+
+  </body>
+  <script type="text/javascript">
+  function vpause(){
+ var video=document.getElementById("vid");
+ video.pause();//pause()predefinrd function
+}
+
+function vplay(){
+var video=document.getElementById("vid");
+video.play();//pause()predefinrd function
+}
+
+function apause(){
+var audio=document.getElementById("aud");
+audio.pause();//pause()predefinrd function
+}
+
+function aplay(){
+var audio=document.getElementById("aud");
+audio.play();//pause()predefinrd function
+}
+
+</script>
+</html>
